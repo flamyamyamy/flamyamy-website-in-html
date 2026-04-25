@@ -178,7 +178,7 @@ body {
 .badge-blue { color: #a78bfa; border-color: #a78bfa; }
 .badge-green { color: var(--green); border-color: var(--green); }
 .badge-purple { color: var(--purple); border-color: var(--purple); }
-.badge-pink { color: #ec4899; border-color: var(--pink); }
+.badge-pink { color: var(--pink); border-color: var(--pink); }
 
 .hero-actions {
     display: flex;
