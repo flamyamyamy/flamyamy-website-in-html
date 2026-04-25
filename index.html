@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -7,6 +8,8 @@
 
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </head>
 <body>
 
@@ -19,6 +22,7 @@
     <div class="nav-links">
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
         <a href="#imprint">Imprint</a>
         <a href="https://github.com/flamyamyamy" target="_blank">GitHub</a>
     </div>
@@ -63,7 +67,6 @@
     </div>
 </section>
 
-
 <section id="projects" class="section">
     <h2 class="section-title">// Projects</h2>
 
@@ -96,7 +99,6 @@
     </div>
 </section>
 
-
 <section id="skills" class="section">
     <h2 class="section-title">// Skills</h2>
 
@@ -127,6 +129,22 @@
     </div>
 </section>
 
+<section id="contact" class="section">
+    <h2 class="section-title">// Contact</h2>
+
+    <div class="grid-1">
+        <div class="card">
+            <form method="POST" action="/contact-submit">
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+
+                <div class="cf-turnstile" data-sitekey=0x4AAAAAADDRilbrXl0g6kib></div>
+
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
 
 <section id="imprint" class="section">
     <h2 class="section-title">// Imprint</h2>
@@ -181,7 +199,6 @@
     </div>
 </section>
 
-
 <script>
 const terminalTexts = [
     "19 🇦🇹 | Law Student | Developer",
@@ -224,3 +241,4 @@ typeLoop();
 
 </body>
 </html>
+```
