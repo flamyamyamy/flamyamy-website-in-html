@@ -12,6 +12,7 @@
     --green: #f0abfc;
     --orange: #e879f9;
     --yellow: #f9a8d4;
+    --pink: #f472b6;
 
     --bg: #0d0614;
     --bg2: #1a1028;
@@ -261,6 +262,30 @@ body {
 .skill-card p {
     color: var(--text-dim);
     line-height: 1.7;
+}
+
+.project-title-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.verify-badge {
+    background: rgba(74, 222, 128, 0.12);
+    color: #4ade80;
+    border: 1px solid rgba(74, 222, 128, 0.35);
+    padding: 0.25rem 0.55rem;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    box-shadow: 0 0 10px rgba(74,222,128,0.15);
+}
+
+.project-card {
+    margin-bottom: 1.5rem;
 }
 
 @media (max-width: 768px) {
